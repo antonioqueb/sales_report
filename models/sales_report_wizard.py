@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-# Modelo Transient para el Wizard del reporte simplificado de ventas
 from odoo import models, fields, api
 
 class SalesReportWizard(models.TransientModel):
@@ -20,4 +19,3 @@ class SalesReportWizard(models.TransientModel):
             },
         }
         return self.env.ref('simplified_sales_report.action_sales_report_pdf').report_action(self, data=data)
-

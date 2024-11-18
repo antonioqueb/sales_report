@@ -16,7 +16,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr t-foreach="data.get('form')" t-as="order">
+                            <tr t-foreach="data['form']" t-as="order">
                                 <td><t t-esc="order['order']"/></td>
                                 <td><t t-esc="order['date']"/></td>
                                 <td><t t-esc="order['customer']"/></td>

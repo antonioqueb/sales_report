@@ -6,6 +6,6 @@
         <field name="model">sale.report.wizard</field>
         <field name="report_type">qweb-pdf</field>
         <field name="report_name">simplified_sales_report.sales_report_template</field>
-        <field name="report_file">simplified_sales_report.sales_report_template</field>
+        <field name="file">simplified_sales_report.sales_report_template</field>
     </record>
 </odoo>
