@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <odoo>
-    <!-- Acción que abre el wizard -->
+    <!-- Acción para abrir el wizard -->
     <record id='sales_report_action' model='ir.actions.act_window'>
         <field name='name'>Generar Reporte de Ventas</field>
         <field name='res_model'>sale.report.wizard</field>
@@ -8,4 +8,3 @@
         <field name='target'>new</field>
     </record>
 </odoo>
-

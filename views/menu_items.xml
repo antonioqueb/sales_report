@@ -1,16 +1,15 @@
 <?xml version='1.0' encoding='utf-8'?>
 <odoo>
-    <!-- Definición del menú principal -->
+    <!-- Menú principal -->
     <menuitem id='sales_report_menu_root'
               name='Reportes Simplificados'
               parent='sale.menu_sale_report'
               sequence='1'/>
     
-    <!-- Submenú para abrir el wizard del reporte -->
+    <!-- Submenú para el wizard -->
     <menuitem id='sales_report_menu'
               name='Reporte de Ventas'
               parent='sales_report_menu_root'
               action='sales_report_action'
               sequence='2'/>
 </odoo>
-

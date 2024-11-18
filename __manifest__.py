@@ -8,13 +8,14 @@
     'author': 'Alpha',
     'depends': ['sale_management'],
     'data': [
-        'security/ir.model.access.csv',  # Control de permisos
-        'views/menu_items.xml',          # Menús para el módulo
-        'views/actions.xml',             # Acciones vinculadas al wizard
-        'views/views.xml',               # Vista del wizard
-        'report/sales_report_templates.xml', # Plantillas del reporte PDF
-        'report/sales_report_actions.xml',   # Acciones del reporte PDF
+        'views/actions.xml',       # Las acciones se cargan primero
+        'views/menu_items.xml',    # Los menús se cargan después
+        'views/views.xml',         # Otras vistas relacionadas
+        'report/sales_report_templates.xml', 
+        'report/sales_report_actions.xml',
+        'security/ir.model.access.csv',
     ],
+
     'installable': True,
     'application': False,
     'license': 'AGPL-3',
