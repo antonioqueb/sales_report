@@ -12,10 +12,8 @@
         'views/views.xml',
         'report/sales_report_templates.xml',
         'report/sales_report_actions.xml',
-        ],
-
+    ],
     'installable': True,
     'application': False,
     'license': 'AGPL-3',
 }
-
