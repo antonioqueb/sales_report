@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <!-- Vista del Wizard -->
+    <record id='sales_report_wizard_view_form' model='ir.ui.view'>
+        <field name='name'>sales.report.wizard.form</field>
+        <field name='model'>sale.report.wizard</field>
+        <field name='arch' type='xml'>
+            <form>
+                <group>
+                    <field name='start_date'/>
+                    <field name='end_date'/>
+                </group>
+                <footer>
+                    <button name='action_generate_report'
+                            string='Generar Reporte'
+                            type='object'
+                            class='btn-primary'/>
+                </footer>
+            </form>
+        </field>
+    </record>
+</odoo>
+
