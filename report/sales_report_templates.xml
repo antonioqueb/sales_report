@@ -1,12 +1,12 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <!-- Plantilla del reporte PDF -->
-    <template id='sales_report_template'>
-        <t t-call='web.html_container'>
-            <t t-call='web.external_layout'>
-                <div class='page'>
+    <template id="sales_report_template">
+        <t t-call="web.html_container">
+            <t t-call="web.external_layout">
+                <div class="page">
                     <center><h2>Reporte Simplificado de Ventas</h2></center>
-                    <table class='table table-condensed'>
+                    <table class="table table-condensed">
                         <thead>
                             <tr>
                                 <th>Orden</th>
@@ -16,11 +16,11 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr t-foreach='data.get("form")' t-as='order'>
-                                <td><t t-esc='order.order'/></td>
-                                <td><t t-esc='order.date'/></td>
-                                <td><t t-esc='order.customer'/></td>
-                                <td><t t-esc='order.total'/></td>
+                            <tr t-foreach="data.get('form')" t-as="order">
+                                <td><t t-esc="order['order']"/></td>
+                                <td><t t-esc="order['date']"/></td>
+                                <td><t t-esc="order['customer']"/></td>
+                                <td><t t-esc="order['total']"/></td>
                             </tr>
                         </tbody>
                     </table>
@@ -29,4 +29,3 @@
         </t>
     </template>
 </odoo>
-
