@@ -1,23 +1,42 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <!-- Vista del Wizard -->
-    <record id='sales_report_wizard_view_form' model='ir.ui.view'>
-        <field name='name'>sales.report.wizard.form</field>
-        <field name='model'>sale.report.wizard</field>
-        <field name='arch' type='xml'>
+    <!-- Acción -->
+    <record id="sales_report_action" model="ir.actions.act_window">
+        <field name="name">Generar Reporte de Ventas</field>
+        <field name="res_model">sale.report.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+    <!-- Vista -->
+    <record id="sales_report_wizard_view_form" model="ir.ui.view">
+        <field name="name">sales.report.wizard.form</field>
+        <field name="model">sale.report.wizard</field>
+        <field name="arch" type="xml">
             <form>
                 <group>
-                    <field name='start_date'/>
-                    <field name='end_date'/>
+                    <field name="start_date"/>
+                    <field name="end_date"/>
                 </group>
                 <footer>
-                    <button name='action_generate_report'
-                            string='Generar Reporte'
-                            type='object'
-                            class='btn-primary'/>
+                    <button name="action_generate_report"
+                            string="Generar Reporte"
+                            type="object"
+                            class="btn-primary"/>
                 </footer>
             </form>
         </field>
     </record>
-</odoo>
 
+    <!-- Menú -->
+    <menuitem id="sales_report_menu_root"
+              name="Reportes Simplificados"
+              parent="sale.menu_sale_report"
+              sequence="1"/>
+
+    <menuitem id="sales_report_menu"
+              name="Reporte de Ventas"
+              parent="sales_report_menu_root"
+              action="sales_report_action"
+              sequence="2"/>
+</odoo>
