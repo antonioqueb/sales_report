@@ -1,2 +1,2 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_sales_report_wizard,simplified_sales_report.model_sale_report_wizard,base.group_user,1,0,1,0
+access_sales_report_wizard,simplified_sales_report.model_sale_report_wizard,model_sale_report_wizard,base.group_user,1,0,1,0
