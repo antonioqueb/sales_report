@@ -8,12 +8,12 @@
     'author': 'Alpha',
     'depends': ['sale_management'],
     'data': [
-        'views/actions.xml',       # Las acciones se cargan primero
-        'views/menu_items.xml',    # Los menús se cargan después
-        'views/views.xml',         # Otras vistas relacionadas
-        'report/sales_report_templates.xml', 
-        'report/sales_report_actions.xml',
-        'security/ir.model.access.csv',
+    'security/ir.model.access.csv',
+    'views/menu_items.xml',
+    'views/actions.xml',
+    'views/views.xml',
+    'report/sales_report_templates.xml',
+    'report/sales_report_actions.xml',
     ],
 
     'installable': True,
